@@ -25,7 +25,7 @@ function checkId(e) {
     }
 }
 
-// Verifies the South African ID number: returns{Valid,Gender,Citizen,BirthDate} BirthDate(dd-mm-yyyy)
+// Validate the South African ID number: returns{Valid,Gender,Citizenship,} 
 function verify_id(num) {
     //Equation to verify.
     if (isNaN(num) || num === '' || num.length !== 13 || num.substring(2,4) === '00' || num.substring(4,6) === '00') 
