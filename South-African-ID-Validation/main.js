@@ -54,7 +54,7 @@ function verify_id(num) {
     
     //Gender & Citizenship
     const gender = (parseInt(num.substring(6, 10)) < 5000) ? "Female" : "Male";
-    const citizenship = (parseInt(num.substring(10, 11)) === 0) ? "South Africa" : "Permanent Residence";
+    const citizenship = (parseInt(num.substring(10, 11)) === 0) ? "South Africa" : "None South African";
 
     //Valid: returns true
     return {Valid:num[num.length - 1] === String(step6),Gender:gender,Citizen:citizenship
